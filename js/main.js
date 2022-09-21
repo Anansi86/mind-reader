@@ -1,45 +1,30 @@
-let slide = [
-    slide1: {
+let mndReader = {
+        header: [
 
-            },
-            header {
-
-            },
-            dialogue box{
-
-            },
-            start button{
-
-            }, 
-            Next button{
-
-            },
-    slide2 {
-        {
+        ],
+        dialogue: {
 
         },
-        header {
+        nextButton: {
 
         },
-        dialogue box{
+        backButton: {
 
-        },
-        start button{
+        }
 
-        }, 
-        Next button{
-
-        },
-    }
-
-
-]
-
-let btnClick = document.getElementById("startButton")
-btnClick.addEventListener("click", mndReader);
-
-function mndReader() {
-   document.getElementById("startButton").innerHTML = txt.gobutton[0];
 }
+   
+    
+    
 
-mndReader()
+//let btnClick = document.getElementById("startButton")
+//btnClick.addEventListener("click", mndReader);
+
+//function mndReader() {
+  // document.getElementById("startButton").innerHTML = txt.gobutton[0];
+//}
+
+let btnClick = document.getElementById("startButton");
+btnClick.addEventListener("click", function() {
+  document.getElementById("startButton").innerHTML = "Hello World";
+});
