@@ -44,3 +44,40 @@ start button (1st slide)
 Next button (Between slides 2-5) slide 5 will say "reveal"
 
 
+mindReader(){
+    if (header is present){
+        then {display header text "I can read your mind'
+            and populate with text "I can read your mind"
+        }
+    } 
+
+    if (button is pressed) {
+        then {repopulate text with "Pick a number from 01-99"
+            and { "next" button appears in middle of app
+            } and {dialoge box populates "when you have your number click next
+        } and next button turns into reset button
+    }
+
+
+    if ("next' button is pressed) {
+        then {repopulate header with "Add both digits together to get a new number"
+            } and { change dialoge box "Ex: 14 is 1+4=5 click next to proceed
+        }    
+    }
+
+    if "next' button is pressed
+        then repopulate header text with "Subtract your new number from the original number"
+            and repopulate dialogue text "Ex: 14-5=9 click next to proceed"
+
+    if "next' button is pressed
+        then replace header with slider with numbers (1-100) and (symbols)
+            and change button text to "reveal"
+                and repopulate dialoge text "Find your new number. Note the symbol beside the number"
+
+    if "next' button is pressed 
+        then repopulate header with symbol that matches the numbers from previous page
+            and repopulate dialoge box with "your symbol is:" <insert> symbol.
+
+
+}
+
