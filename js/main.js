@@ -72,13 +72,15 @@ let mndReader = {
   // document.getElementById("startButton").innerHTML = txt.gobutton[0];
 //}
 let H =  document.getElementById("header");
-let restart = document.getElementById("restartButton")
+let restart = document.getElementById("restartButton");
+let txtBox = document.getElementById("dialogue");
+let next = document.getElementById("nextButton");
 
 //v---first slide
 
 let btnClick = document.getElementById("startButton");
 btnClick.addEventListener("click", function() {
- // document.getElementById("startButton").innerHTML = "Hello World";
-  H.innerHTML= mndReader.slide1[0];
-  
+  H.innerHTML = mndReader.slide2[0]
+  txtBox.innerHTML = mndReader.slide2[1];
+  next.innerHTML = mndReader.slide2[3];
 });

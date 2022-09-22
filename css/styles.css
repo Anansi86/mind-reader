@@ -1,5 +1,5 @@
 div[class*="col"] {
-    min-height: 250px;
+    min-height: 100;
 }
 
 div[class*="container"] {
