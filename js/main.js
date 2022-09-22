@@ -1,24 +1,23 @@
 let mndReader = {
-        slide1: [
-          header =  
-            "I can read your mind",
-          dialogueBox =
-            " ",
-          resetButton =
-            "Next", 
-          nextButton =
-            " " 
-        ],
+    //    slide1: [
+    //      header =  
+    //        "I can read your mind",
+    //      dialogueBox =
+    //        "",
+    //      resetButton =
+    //        "Start", 
+    //      nextButton =
+    //        "" 
+     //   ],
         slide2: [
           header =
             "Pick a number from 01-99",
           dialogueBox =
-            "when you have your number click next",
-            
-          Button = 
-            "back",
-            
-          nextButton = "Next"
+            "when you have your number click next",                 
+          nextButton = 
+            "Next",
+          resetButton = 
+            "back"
         ],
         slide3: [
           header = 
@@ -72,15 +71,17 @@ let mndReader = {
   // document.getElementById("startButton").innerHTML = txt.gobutton[0];
 //}
 let H =  document.getElementById("header");
-let restart = document.getElementById("restartButton");
 let txtBox = document.getElementById("dialogue");
 let next = document.getElementById("nextButton");
-
-//v---first slide
+let restart = document.getElementById("reset");
+//v--- 2nd slide
 
 let btnClick = document.getElementById("startButton");
-btnClick.addEventListener("click", function() {
+  btnClick.addEventListener("click", function() {
   H.innerHTML = mndReader.slide2[0]
   txtBox.innerHTML = mndReader.slide2[1];
-  next.innerHTML = mndReader.slide2[3];
+  next.innerHTML = mndReader.slide2[2];
+  restart.innerHTML = mndReader.slide2[3];
+  
 });
+

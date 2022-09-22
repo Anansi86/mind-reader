@@ -81,3 +81,30 @@ mindReader(){
 
 }
 
+header = [
+    "Add both digits together to get a new number",
+    "Subtract your new number from the original number",
+    ""
+    ""
+],
+
+dialogueBox = [
+    "when you have your number click next",
+    "Ex: 14 is 1+4=5 click next to proceed",
+    "Find your new number. Note the symbol beside the number",
+    "your symbol is...",
+],
+
+nextButton = [
+    "Next"
+    "Next"
+    "Next"
+    ""
+],
+
+resetButton = [
+        "",
+        "",
+        "",
+        ""
+]
