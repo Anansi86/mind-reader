@@ -36,22 +36,22 @@ let mndReader = {
     //v--- 2nd slide
 
     //btn2 = document.getElementById("nextButton")let btn = document.createElement("button");
-    btn2.innerHTML = "Click Me";
-    document.body.appendChild(btn);
+   // btn2.innerHTML = "Click Me";
+    //document.body.appendChild(btn);
     
     
     let currentPage = 0;
     let btnClick = document.getElementById("startButton");
-    btnClick.addEventListener("click", function() {
+        btnClick.addEventListener("click", function() {
         currentPage++;
         H.innerHTML = mndReader.header[currentPage];
-        txtBox.innerHTML = mndReader.dialogueBox[currentPage].replace("%YOUR_SYMBOL%", btn2);
+        txtBox.innerHTML = mndReader.dialogueBox[currentPage];
         next.innerHTML = mndReader.nextButton[currentPage];
-        restart.innerHTML = mndReader.resetButton[currentPage];
-    });
-let symbols = "!@#$%^&*>,".split("");
-let pickSymbol = Math.floor(Math.random() * symbols.length);
-let pick = symbols.splice(pickSymbol, 1);
+       // restart.innerHTML = mndReader.resetButton[currentPage];
+
+    let symbols = "!@#$%^&*>,".split("");
+    let pickSymbol = Math.floor(Math.random() * symbols.length);
+    let pick = symbols.splice(pickSymbol, 1);
 
 // for loop for 1-99 and mixing in the []
 for (let i = 0; i < 99; i++) {
@@ -60,4 +60,5 @@ for (let i = 0; i < 99; i++) {
     } else {
         console.log(i + " - " + symbols[Math.floor(Math.random() * symbols.length)]);
     }
-}
+  }
+});
