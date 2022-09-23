@@ -1,5 +1,5 @@
-let mndReader = {
-    //    slide1: [
+let mndReader = [
+    //    [
     //      header =  
     //        "I can read your mind",
     //      dialogueBox =
@@ -9,8 +9,8 @@ let mndReader = {
     //      nextButton =
     //        "" 
      //   ],
-        slide2: [
-          header =
+        {
+          header :
             "Pick a number from 01-99",
           dialogueBox =
             "when you have your number click next",                 
@@ -19,7 +19,7 @@ let mndReader = {
           resetButton = 
             "back"
         ],
-        slide3: [
+        [
           header = 
             "Add both digits together to get a new number",
           dialogueBox =
@@ -29,7 +29,7 @@ let mndReader = {
           nextButton =
             "Next"
         ],
-        slide4: [ 
+        [ 
           header =  
            "Subtract your new number from the original number",
           dialogueBox = 
@@ -39,7 +39,7 @@ let mndReader = {
           nextButton =
             "Next"
         ],
-        slide5: [
+        [
 //          header = "replace header with slider with numbers (1-100) and (symbols)",
           dialogueBox = 
             "Find your new number. Note the symbol beside the number",
@@ -48,7 +48,7 @@ let mndReader = {
           nextButton =
             "Reveal"
         ],
-        slide6: [
+        [
           header = 
  //         "then repopulate header with symbol that matches the numbers from previous page",
           dialogueBox =
@@ -75,13 +75,15 @@ let txtBox = document.getElementById("dialogue");
 let next = document.getElementById("nextButton");
 let restart = document.getElementById("reset");
 //v--- 2nd slide
+ 
 
 let btnClick = document.getElementById("startButton");
-  btnClick.addEventListener("click", function() {
+btnClick.addEventListener("click", function() {
   H.innerHTML = mndReader.slide2[0]
   txtBox.innerHTML = mndReader.slide2[1];
   next.innerHTML = mndReader.slide2[2];
   restart.innerHTML = mndReader.slide2[3];
+  mndReader.slide2.header
   
 });
 
