@@ -1,0 +1,11 @@
+div[class*="col"] {
+    min-height: 100;
+}
+
+div[class*="container"] {
+    min-height: 250px;
+}
+
+.button {
+    flex: right;
+}
