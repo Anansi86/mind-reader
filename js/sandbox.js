@@ -53,7 +53,7 @@ let mndReader = {
 
 });
 
-let symbols = "!@#$%^&*>,".split("");
+    let symbols = "!@#$%^&*>,".split("");
     let pickSymbol = Math.floor(Math.random() * symbols.length);
     let pick = symbols.splice(pickSymbol, 1);
 
