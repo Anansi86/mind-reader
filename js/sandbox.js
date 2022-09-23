@@ -31,8 +31,8 @@ let mndReader = {
 }
     let H = document.getElementById("header");
     let txtBox = document.getElementById("dialogue");
-    let next = document.getElementById("nextButton");
-    let restart = document.getElementById("resetButton");
+    let next = document.getElementById("startButton");
+    let restart = document.getElementById("restartButton");
     //v--- 2nd slide
 
     //btn2 = document.getElementById("nextButton")let btn = document.createElement("button");
@@ -47,13 +47,16 @@ let mndReader = {
         H.innerHTML = mndReader.header[currentPage];
         txtBox.innerHTML = mndReader.dialogueBox[currentPage];
         next.innerHTML = mndReader.nextButton[currentPage];
-       // restart.innerHTML = mndReader.resetButton[currentPage];
+        restart.innerHTML = mndReader.resetButton[currentPage];
 
-    let symbols = "!@#$%^&*>,".split("");
+// for loop for 1-99 and mixing in the []
+
+});
+
+let symbols = "!@#$%^&*>,".split("");
     let pickSymbol = Math.floor(Math.random() * symbols.length);
     let pick = symbols.splice(pickSymbol, 1);
 
-// for loop for 1-99 and mixing in the []
 for (let i = 0; i < 99; i++) {
     if (i % 9 == 0) {
         console.log(i + " - " + pick);
@@ -61,4 +64,3 @@ for (let i = 0; i < 99; i++) {
         console.log(i + " - " + symbols[Math.floor(Math.random() * symbols.length)]);
     }
   }
-});
